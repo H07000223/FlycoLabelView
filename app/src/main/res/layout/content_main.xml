@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222831"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.flyco.labelviewsample.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/beauty"/>
+
+        <com.flyco.labelview.LabelView
+            xmlns:lv="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            lv:lv_text="Hot"
+            lv:lv_text_size="12sp"/>
+
+        <com.flyco.labelview.LabelView
+            xmlns:lv="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            lv:lv_background_color="#3F9FE0"
+            lv:lv_gravity="TOP_RIGHT"
+            lv:lv_text="纯♀妹子"
+            lv:lv_text_size="12sp"/>
+
+        <com.flyco.labelview.LabelView
+            xmlns:lv="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            lv:lv_background_color="#F6CE59"
+            lv:lv_gravity="BOTTOM_LEFT"
+            lv:lv_text="Gank.io"
+            lv:lv_text_all_caps="false"
+            lv:lv_text_size="12sp"/>
+
+        <com.flyco.labelview.LabelView
+            xmlns:lv="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            lv:lv_background_color="#EC7263"
+            lv:lv_gravity="BOTTOM_RIGHT"
+            lv:lv_text="new"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/beauty"/>
+
+        <com.flyco.labelview.LabelView
+            xmlns:lv="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            lv:lv_fill_triangle="true"
+            lv:lv_text="新"
+            lv:lv_text_size="12sp"/>
+
+        <com.flyco.labelview.LabelView
+            xmlns:lv="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            lv:lv_background_color="#3F9FE0"
+            lv:lv_fill_triangle="true"
+            lv:lv_gravity="TOP_RIGHT"
+            lv:lv_text="妹子"
+            lv:lv_text_size="12sp"/>
+
+        <com.flyco.labelview.LabelView
+            xmlns:lv="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            lv:lv_background_color="#F6CE59"
+            lv:lv_fill_triangle="true"
+            lv:lv_gravity="BOTTOM_LEFT"
+            lv:lv_text="Gank.io"
+            lv:lv_text_all_caps="false"
+            lv:lv_text_size="12sp"/>
+
+        <com.flyco.labelview.LabelView
+            xmlns:lv="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            lv:lv_background_color="#EC7263"
+            lv:lv_fill_triangle="true"
+            lv:lv_gravity="BOTTOM_RIGHT"
+            lv:lv_text="new"/>
+    </FrameLayout>
+</LinearLayout>
