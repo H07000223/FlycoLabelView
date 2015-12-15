@@ -1,10 +1,10 @@
 #FlycoLabelView
 
-####[中文版](https://github.com/H07000223/FlycoTabLayout/blob/master/README_CN.md)
+####[中文版](https://github.com/H07000223/FlycoLabelView/blob/master/README_CN.md)
 A Simple Android LabelView.
 
 ##Demo
-<img src="https://github.com/favicon.ico" width="100">
+<img src="https://github.com/H07000223/FlycoLabelView/blob/master/preview.png" width="640">
 
 ##Gradle
 

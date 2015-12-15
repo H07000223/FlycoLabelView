@@ -3,7 +3,7 @@
 一个简单的Android标签控件.
 
 ##Demo
-<img src="https://github.com/favicon.ico" width="100">
+<img src="https://github.com/H07000223/FlycoLabelView/blob/master/preview.png" width="640">
 
 ##Gradle
 
