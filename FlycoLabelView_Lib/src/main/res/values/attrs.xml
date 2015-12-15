@@ -15,7 +15,7 @@
         <attr name="lv_background_color" format="color"/>
         <!-- 设置LabelView所在矩形最小宽高,默认mFillTriangle?35dp:50dp-->
         <attr name="lv_min_size" format="dimension"/>
-        <!-- 设置文字上下padding,默认2.5dp,mFillTriangle为true时无效-->
+        <!-- 设置文字上下padding,默认3.5dp,mFillTriangle为true时无效-->
         <attr name="lv_padding" format="dimension"/>
         <!-- 设置LabelView方向 -->
         <attr name="lv_gravity" format="enum">

@@ -23,6 +23,10 @@ public class LabelView extends View {
     private int mGravity;
     private static final int DEFAULT_DEGREES = 45;
 
+    private Paint mTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    private Paint mBackgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    private Path mPath = new Path();
+
     public LabelView(Context context) {
         this(context, null);
     }
@@ -49,9 +53,100 @@ public class LabelView extends View {
         ta.recycle();
     }
 
-    Paint mTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-    private Paint mBackgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-    Path mPath = new Path();
+    public void setTextColor(int textColor) {
+        mTextColor = textColor;
+        invalidate();
+    }
+
+    public void setText(String text) {
+        mTextContent = text;
+        invalidate();
+    }
+
+    public void setTextSize(float textSize) {
+        mTextSize = sp2px(textSize);
+        invalidate();
+    }
+
+    public void setTextBold(boolean textBold) {
+        mTextBold = textBold;
+        invalidate();
+    }
+
+    public void setFillTriangle(boolean fillTriangle) {
+        mFillTriangle = fillTriangle;
+        invalidate();
+    }
+
+    public void setTextAllCaps(boolean textAllCaps) {
+        mTextAllCaps = textAllCaps;
+        invalidate();
+    }
+
+    public void setBgColor(int backgroundColor) {
+        mBackgroundColor = backgroundColor;
+        invalidate();
+    }
+
+    public void setMinSize(float minSize) {
+        mMinSize = dp2px(minSize);
+        invalidate();
+    }
+
+    public void setPadding(float padding) {
+        mPadding = dp2px(padding);
+        invalidate();
+    }
+
+    /**
+     * Gravity.TOP | Gravity.LEFT
+     * Gravity.TOP | Gravity.RIGHT
+     * Gravity.BOTTOM | Gravity.LEFT
+     * Gravity.BOTTOM | Gravity.RIGHT
+     */
+    public void setGravity(int gravity) {
+        mGravity = gravity;
+    }
+
+    public String getText() {
+        return mTextContent;
+    }
+
+    public int getTextColor() {
+        return mTextColor;
+    }
+
+    public float getTextSize() {
+        return mTextSize;
+    }
+
+    public boolean isTextBold() {
+        return mTextBold;
+    }
+
+    public boolean isFillTriangle() {
+        return mFillTriangle;
+    }
+
+    public boolean isTextAllCaps() {
+        return mTextAllCaps;
+    }
+
+    public int getBgColor() {
+        return mBackgroundColor;
+    }
+
+    public float getMinSize() {
+        return mMinSize;
+    }
+
+    public float getPadding() {
+        return mPadding;
+    }
+
+    public int getGravity() {
+        return mGravity;
+    }
 
     @Override
     protected void onDraw(Canvas canvas) {
