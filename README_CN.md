@@ -9,7 +9,7 @@
 
 ```groovy
 dependencies{
-    compile 'com.flyco.labelview:FlycoLabelView_Lib:1.0.0@aar'
+    compile 'com.flyco.labelview:FlycoLabelView_Lib:1.0.2@aar'
 }
 ```
 
