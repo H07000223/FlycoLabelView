@@ -29,3 +29,110 @@ dependencies{
 | lv_gravity | enum |set LabelView gravity TOP_LEFT or TOP_RIGHT or BOTTOM_LEFT or BOTTOM_RIGHT default TOP_LEFT
 | lv_fill_triangle | boolean | set fill triangle area, default false
 
+
+##Examples
+
+###Triangle View (inside CardView)
+
+```
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="4dp">
+    
+    <com.flyco.labelview.LabelView
+        xmlns:lv="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        lv:lv_fill_triangle="true"
+        lv:lv_gravity="TOP_RIGHT"
+        lv:lv_text="15%"
+        lv:lv_text_size="12sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/single_spacing"
+            tools:text="Promotion #1"/>
+
+        <TextView
+            android:id="@id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/single_spacing"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/single_spacing"/>
+
+    </LinearLayout
+
+</android.support.v7.widget.CardView>
+
+```
+
+###Line View (inside CardView)
+```
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="4dp">
+    
+    <com.flyco.labelview.LabelView
+        xmlns:lv="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        lv:lv_gravity="TOP_RIGHT"
+        lv:lv_text="15%"
+        lv:lv_text_size="12sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="Name 1"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="Description 1"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="Date 1"/>
+
+    </LinearLayout
+
+</android.support.v7.widget.CardView>
+
+```
