@@ -1,12 +1,12 @@
-#FlycoLabelView
+# FlycoLabelView
 
-####[中文版](https://github.com/H07000223/FlycoLabelView/blob/master/README_CN.md)
+#### [中文版](https://github.com/H07000223/FlycoLabelView/blob/master/README_CN.md)
 A Simple Android LabelView.
 
-##Demo
+## Demo
 <img src="https://github.com/H07000223/FlycoLabelView/blob/master/preview.png" width="640">
 
-##Gradle
+## Gradle
 
 ```groovy
 dependencies{
@@ -14,7 +14,7 @@ dependencies{
 }
 ```
 
-##Attributes
+## Attributes
 
 |name|format|description|
 |:---:|:---:|:---:|
